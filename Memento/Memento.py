@@ -22,6 +22,6 @@ class Originator():
     def save(self) -> Memento:
          return ConcreteMemento(self._state)
     
-def restore(self, memento: Memento) -> None:
-    self._state = memento.get_state()
-    print(f"Originator: My state has changed to: {self._state}")
+    def restore(self, memento: Memento) -> None:
+        self._state = memento.get_state()
+        print(f"Originator: My state has changed to: {self._state}")
